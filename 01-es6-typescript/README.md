@@ -10,6 +10,49 @@ Going over advanced ES6 / Typescript features and their usage in React
 - spread operator
 - Promise
 
+## EX - react-query
+
+http://nztodo.herokuapp.com/api/tasks/?format=json
+
+
+```
+POST
+http://nztodo.herokuapp.com/api/tasks/
+
+headers: {
+	Content-Type: 'application/json'
+}
+
+body: { title: 'sdfds', description: 'dsf', group: 'microfocus'}
+```
+
+```
+> npx create-react-app server-tutorial --template=typescript
+```
+
+add 2 components
+
+```
+<TodoList />
+```
+
+```
+<ul><li>{title}</li></ul>
+```
+
+use react query
+
+https://react-query.tanstack.com/
+
+```
+<CreateTodo />
+```
+
+```
+<button>create new todo</button>
+```
+when creating a new item you can tell the TodoList to refetch
+
 ## EX.
 
 ### SvgIcon - Spread operator

@@ -107,3 +107,42 @@ timerPromise.then(
 
 export {}
 
+/**
+
+------o-|--->
+
+promise
+
+promise.then
+
+promise.catch
+
+
+ */
+ 
+/*
+async function stam() {
+	try {
+		if (condition) {
+			const someValue = await timerPromise;	
+		}
+		for(let i = 0; i<1000; i++) {
+			
+		}
+		
+		// const someValue2 = await promise2;
+		// const someValue2 = await promise2;
+		return 42;	
+	} catch(err) {
+		
+	}
+	
+}
+
+const promiseFourtyTwo: Promise<number> = stam();
+
+promiseFourtyTwo.then((fourtyTwo: number) => {
+	
+})
+
+*/
