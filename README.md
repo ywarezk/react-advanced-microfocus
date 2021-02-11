@@ -24,6 +24,11 @@ Some experience developing with React
 ## Course Plan
 
 1. Advanced ES6 and Typescript
+2. React Hooks
+3. Advanced forms
+4. Advanced Redux
+5. Routing
+6. Server Side Rendering
 
 
 
