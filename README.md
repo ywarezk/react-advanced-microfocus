@@ -37,3 +37,5 @@ Additional advanced React lectures are available in my youtube channel:
 https://www.youtube.com/user/ywarezk/search?query=react
 
 ## Video Lectures
+
+1. https://johnbryce.zoom.us/rec/share/klPPNLEVDalPzBmzwJOszLTyQbBs9K0Oqc1td5uRpY_ogvadyZWYMCmQsVNJc1I.m5qcoHWe27epU-ur
