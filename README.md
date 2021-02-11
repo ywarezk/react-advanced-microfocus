@@ -30,6 +30,10 @@ Some experience developing with React
 5. Routing
 6. Server Side Rendering
 
+## My Youtube channel
 
+Additional advanced React lectures are available in my youtube channel:
+
+https://www.youtube.com/user/ywarezk/search?query=react
 
 ## Video Lectures
