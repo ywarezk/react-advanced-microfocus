@@ -39,3 +39,6 @@ https://www.youtube.com/user/ywarezk/search?query=react
 ## Video Lectures
 
 1. https://johnbryce.zoom.us/rec/share/klPPNLEVDalPzBmzwJOszLTyQbBs9K0Oqc1td5uRpY_ogvadyZWYMCmQsVNJc1I.m5qcoHWe27epU-ur
+
+2. https://johnbryce.zoom.us/rec/share/HshfRiYA4-lBE0u_ql9FDmdN2-SysOMtj4nOzXYQyOP92-H90kpBoJ3j4NEy7m75.R_3TQXaXTiooDiJD
+

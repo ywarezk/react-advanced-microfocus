@@ -2,6 +2,13 @@
 
 In this lesson we will cover advanced forms with React
 
+## Our goals with forms
+
+- binding
+- validation
+- Error message
+- submit logic
+
 ## Lesson Plan
 
 - controlled
