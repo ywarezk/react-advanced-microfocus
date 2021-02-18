@@ -91,3 +91,7 @@ The control will be created using `Formik` custom controls
 	</Form>
 </Formik>
 ```
+
+## solution
+
+https://codesandbox.io/s/formik-custom-field-dp87j?file=/src/ContactForm.js
