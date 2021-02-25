@@ -73,7 +73,7 @@ function App() {
 				</button> */}
 				
 				<h1>App</h1>
-				{/* <Child /> */}
+				<Child />
 				
 				<TodoList />
 			</div>
