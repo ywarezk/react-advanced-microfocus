@@ -1,6 +1,6 @@
 
 
-import { FC, useState } from 'react';
+import { FC, useMemo, useState } from 'react';
 import { Grand } from './Grand';
 
 /*
@@ -13,12 +13,19 @@ export const Child: FC = () => {
 	
 	const [counter, setCounter] = useState(0);
 	
+	const MemoGrand = useMemo(() => {
+		return <Grand />
+	}, [])
+	
 	return (
 		<>
 			<h1 onClick={() => setCounter(counter + 1)}>
 				Child {counter}
 			</h1>
-			<Grand />
+			{/* <Grand counter={counter} /> */}
+			{
+				MemoGrand
+			}
 		</>
 	)
 } 
