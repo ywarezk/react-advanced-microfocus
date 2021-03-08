@@ -1,5 +1,4 @@
-import { FC, useContext, useEffect, useState } from "react";
-import { TokenContext } from "./hello.context";
+import { FC, useState } from "react";
 
 interface Task {
 	title: string;
@@ -8,9 +7,9 @@ interface Task {
 }
 
 export const TodoList: FC = () => {
-	const { token } = useContext(TokenContext);
 	const [ todos, setTodos ] = useState<Task[]>([]);
 	
+	/*
 	useEffect(() => {
 		
 		if (!token) return;
@@ -32,10 +31,7 @@ export const TodoList: FC = () => {
 		
 		
 	}, [token])
-	
-	// fetch
-	
-	// setInterval
+	*/
 	
 	return (
 		<ul>

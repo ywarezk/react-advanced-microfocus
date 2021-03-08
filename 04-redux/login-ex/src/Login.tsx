@@ -1,6 +1,5 @@
-import { FC, useContext } from "react";
+import { FC } from "react";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { TokenContext } from './hello.context';
 import * as yup from 'yup';
 
 const loginSchema = yup.object().shape({
@@ -10,8 +9,6 @@ const loginSchema = yup.object().shape({
 
 
 export const Login: FC = () => {
-	const { setToken } = useContext(TokenContext);
-	
 	const handleSubmit = async (values: any) => {
 		const response = await fetch(
 			'https://academeez-login-ex.herokuapp.com/api/users/login',
@@ -24,23 +21,7 @@ export const Login: FC = () => {
 			}
 		)
 		const tokenObj = await response.json();
-		setToken(tokenObj.token);
 	}
-	
-	// return (
-	// 	<Formik
-	// 		initialValues={ {email: '', password: ''} }
-	// 		onSubmit={handleSubmit}
-	// 	>
-	// 		( {handleSubmit, handleChange} ) => {
-	// 			return (
-	// 				<form onSubmit={handleSubmit}>
-	// 					<input type="email" name="email" onChange={handleChange} />
-	// 				</form>
-	// 			)	
-	// 		}	
-	// 	</Formik>
-	// )
 	
 	return (
 		<Formik
@@ -49,8 +30,6 @@ export const Login: FC = () => {
 			validationSchema={loginSchema}
 		>
 			<Form>
-				
-				
 				<Field type="email" name="email" placeholder="enter email" />
 				<ErrorMessage name="email" />
 				<Field type="password" name="password" placeholder="enter password" />
