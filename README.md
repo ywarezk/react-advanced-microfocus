@@ -48,3 +48,5 @@ https://www.youtube.com/user/ywarezk/search?query=react
 
 5. https://johnbryce.zoom.us/rec/share/UFKUvbQxXuoZGdL-78rjsAeJDlfnfSYZZ8wOnt6xraUpA4F8M2m545RJQ9AVcBls.Dz4DJUXVve2y7GhW
 
+6. https://johnbryce.zoom.us/rec/share/Mp2gnCpUSEdGD1ImjF2eh-Yt83d9kcF5D79_QIi_adk_RMgPwYGj7GuP-6bIR_uI.78ovzJE0QSWVqj0D
+
