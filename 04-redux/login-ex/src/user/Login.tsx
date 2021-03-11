@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
+import { useDispatch } from "react-redux";
+import { userSlice, login } from './user.slice';
 
 const loginSchema = yup.object().shape({
 	email: yup.string().email('Bad email format').required('this field is required'),
@@ -9,18 +11,11 @@ const loginSchema = yup.object().shape({
 
 
 export const Login: FC = () => {
-	const handleSubmit = async (values: any) => {
-		const response = await fetch(
-			'https://academeez-login-ex.herokuapp.com/api/users/login',
-			{
-				method: 'POST',
-				body: JSON.stringify(values),
-				headers: {
-					'Content-Type': 'application/json'
-				}
-			}
-		)
-		const tokenObj = await response.json();
+	// store.dispatch
+	const dispatch = useDispatch()
+	
+	const handleSubmit = async (values: any) => {		
+		dispatch( login(values) );
 	}
 	
 	return (

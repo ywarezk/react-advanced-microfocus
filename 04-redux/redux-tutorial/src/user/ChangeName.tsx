@@ -22,6 +22,8 @@ export const ChangeName: FC = () => {
 	const handleSubmit = (values: any) => {
 		console.log(values);
 		// { type: 'CHANGE_NAME', payload: {firstName:'', lastName:''}}
+		
+		console.log(userSlice.actions.changeName(values));
 		dispatch( userSlice.actions.changeName(values) )
 	}
 	
