@@ -1,16 +1,13 @@
-import { createSlice, createAsyncThunk, createSelector, createEntityAdapter } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const tasksEntityAdapter = createEntityAdapter();
+/**
+ * we can use createEntityAdapter to manage the array
+ */
 
 export const fetchTasks = createAsyncThunk(
 	'todo/fetchTasks',
-	async (token: any) => {
-		if (!token) return [];
-		const response = await fetch('https://academeez-login-ex.herokuapp.com/api/tasks', {
-			headers: {
-				'Authorization': `Bearer ${token}`
-			}
-		});
+	async () => {
+		const response = await fetch('http://nztodo.herokuapp.com/api/tasks/?format=json');
 		const todoList = await response.json();
 		return todoList;
 	}
@@ -18,17 +15,20 @@ export const fetchTasks = createAsyncThunk(
 
 export const todoSlice = createSlice({
 	name: 'todo',
-	initialState: tasksEntityAdapter.getInitialState(),
+	initialState: {
+		tasks: []
+	},
 	reducers: {
 		
 	},
 	extraReducers: {
-		[(fetchTasks.fulfilled as any)]: (state: any, action) => tasksEntityAdapter.setAll(state, action.payload)
+		[(fetchTasks.fulfilled as any)]: (state: any, action) => {
+			state['tasks'] = action.payload;
+		}
 	}
 })
 
 
-export const { selectAll } = tasksEntityAdapter.getSelectors((state: any) => state.todo);
 
 
 

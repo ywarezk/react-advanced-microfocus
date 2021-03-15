@@ -1,6 +1,5 @@
 ## EX Redux Redux toolkit
 
-- in the `TodoList` add a delete button that should delete the item from  
-redux state
-- create `<CreateTodo />` that holds a form with, title, description to add
-  a new task to the list of tasks
+- create an entity adapter to manage the array of tasks in the state
+- the entity adapter contains selectors - replace the function in `TodoList` with the appropriate selector
+- for each list item - add a delete button that will delete the element from the redux store
