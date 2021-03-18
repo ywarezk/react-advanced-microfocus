@@ -1,15 +1,46 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+// /
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
+import { useState, lazy, Suspense } from "react";
+// import SomethingBig from "../components/SomethingBig";
+import dynamic from 'next/dynamic'
+
+const LazySomethingBig = dynamic(
+	async () => {
+		// Promise<{ default: function SomethingBig(){...} }>
+		const module = await import('../components/SomethingBig');
+		return module.default as any;
+	}
 )
 
-export default IndexPage
+export default function Home() {
+	const [isShowing, setIsShowing] = useState(false);
+	
+	const handleClick = () => {
+		setIsShowing(!isShowing);
+	}
+	
+	return (
+		<div>
+			<h1>
+				hello im in the homepage
+			</h1>
+			<button onClick={handleClick}>
+				toggle something big
+			</button>
+			{/* this is lazy loading when not using nextjs */}
+			
+{/* 			
+			<Suspense fallback={<h1>Loading...</h1>}>
+			
+			{
+				isShowing && <LazySomethingBig />
+			}
+			</Suspense> */}
+			
+			{
+				isShowing && <LazySomethingBig />
+			}
+		</div>
+		
+	)
+}
