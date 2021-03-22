@@ -36,6 +36,28 @@ Additional advanced React lectures are available in my youtube channel:
 
 https://www.youtube.com/user/ywarezk/search?query=react
 
+
+## My youtube video links
+
+- forms
+
+https://youtu.be/CAobBdYor6U
+
+- redux
+
+https://youtu.be/7pZmBah66zE
+
+https://youtu.be/3PKv9gG68Pg
+
+testing
+
+https://youtu.be/Kaz2yD3-8qk
+
+https://youtu.be/Ht_f1gCj6uo
+
+
+
+
 ## Video Lectures
 
 1. https://johnbryce.zoom.us/rec/share/klPPNLEVDalPzBmzwJOszLTyQbBs9K0Oqc1td5uRpY_ogvadyZWYMCmQsVNJc1I.m5qcoHWe27epU-ur
